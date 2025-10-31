@@ -23,6 +23,7 @@ import AddNetworkButton from "./components/AddNetworkButton";
 import { useTransfer } from "./hooks/useTransfer";
 import { DEFAULTS, arcTestnet } from "./utils/constants";
 import { switchToChain, getChainConfig } from "./utils/addNetwork";
+import { sdk } from '@farcaster/miniapp-sdk';
 
 
 function App() {
@@ -123,6 +124,18 @@ function App() {
     sourceChainId === arcTestnet.id ? "Arc Testnet" : "Base Sepolia";
   const destinationNetworkName =
     destinationChainId === arcTestnet.id ? "Arc Testnet" : "Base Sepolia";
+
+  useEffect(() => {
+    const initializeSdk = async () => {
+      try {
+        await sdk.actions.ready();
+      } catch (error) {
+        console.error('Failed to initialize Farcaster SDK:', error);
+      }
+    };
+    
+    initializeSdk();
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
@@ -414,4 +427,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

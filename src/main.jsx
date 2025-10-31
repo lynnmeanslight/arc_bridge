@@ -11,7 +11,7 @@ import './index.css';
 import { arcTestnet } from './utils/constants';
 import { sdk } from '@farcaster/miniapp-sdk';
 
-await sdk.actions.ready();
+
 // Configure Wagmi with multiple wallet options
 const config = createConfig({
   chains: [arcTestnet, baseSepolia],
