@@ -15,16 +15,16 @@
     "splashImageUrl": "https://arc-bridge.vercel.app/favicon_io/favicon-64x64.png",
     "splashBackgroundColor": "#000000",
     "webhookUrl": "https://ex.co/api/webhook",
-    "subtitle": "Fast, fun, social",
-    "description": "A fast, fun way to challenge friends in real time.",
+    "subtitle": "Bridge USDC between Arc & Base",
+    "description": "Instantly bridge native USDC between Arc Testnet and Base Sepolia using Circle's CCTP protocol. Seamless cross-chain transfers in seconds.",
     "screenshotUrls": [
     ],
-    "primaryCategory": "defi",
-    "tags": ["bridge", "miniapp", "baseapp","defi","arc-testnet"],
+    "primaryCategory": "finance",
+    "tags": ["bridge", "miniapp", "baseapp","stablecoin","arc-testnet"],
     "heroImageUrl": "https://arc-bridge.vercel.app/favicon_io/favicon-512x512.png",
     "tagline": "Bridge USDC instantly using CCTP V2 by Circle",
     "ogTitle": "Arc Bridge",
-    "ogDescription": "Bridge USDC instantly using CCTP V2 by Circle",
+    "ogDescription": "Bridge USDC instantly using CCTP",
     "ogImageUrl": "https://arc-bridge.vercel.app/favicon_io/favicon-512x512.png",
     "noindex": false
   }
